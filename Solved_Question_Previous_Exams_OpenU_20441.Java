@@ -637,15 +637,15 @@ private static int sumArry (int[] arr, int i) {
 	int temp;
 
 
-	for (int thisStage= 0; thisStage<k; begin+) {
+	for (int thisStage= 0; thisStage<k; thisStage++) {
 		for (int now = curr; now < arr.length; now++) 
 		{
-			if (arr[now] == thisStage)
+			if (arr[now] % k == thisStage)
 			{
 				temp = arr[curr]
 				arr[curr] = arr[now];
 				arr[now] = temp; 
-				cur++;
+				curr++;
 			}
 		
 		
